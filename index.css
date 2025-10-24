@@ -25,6 +25,31 @@
   box-shadow: #ccc 0px 3px 8px ;
 }
 
+@media (max-width: 768px) {
+  .section1{
+    flex-direction: column-reverse; /* image above text on mobile */
+    text-align: center;
+    padding: 24px 12px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    max-width: 60%;
+    margin: 12px auto 8px;
+    border-width: 3px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+  .intro-text {
+    padding: 0 12px;
+  }
+
+  .heading {
+    font-size: 1.8rem; /* adjust for mobile */
+  }
+}
+
 .intro-text{
     align-items: flex-start;
     max-width: 500px;
