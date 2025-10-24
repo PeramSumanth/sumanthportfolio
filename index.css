@@ -26,27 +26,35 @@
 }
 
 @media (max-width: 768px) {
-  .section1{
-    flex-direction: column-reverse; /* image above text on mobile */
+  .section1 {
+    flex-direction: column;      /* stack items vertically */
+    align-items: center;         /* center horizontally */
     text-align: center;
     padding: 24px 12px;
+    height: auto;                /* allow height to grow on mobile */
   }
 
+  /* make image appear first on mobile */
   .profile-pic {
+    order: -1;                   /* place profile pic before details */
     width: 140px;
     height: 140px;
     max-width: 60%;
-    margin: 12px auto 8px;
+    margin: 0 0 12px;            /* space below the image */
     border-width: 3px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    object-fit: cover;
   }
 
   .intro-text {
-    padding: 0 12px;
+    order: 0;
+    padding: 0 12px;             /* remove large left padding from desktop */
+    max-width: 100%;
   }
 
   .heading {
-    font-size: 1.8rem; /* adjust for mobile */
+    font-size: 1.8rem;           /* mobile heading size */
+    margin-top: 6px;
   }
 }
 
