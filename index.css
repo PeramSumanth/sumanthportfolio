@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .section1 {
-    flex-direction: column;      /* stack items vertically */
+    flex-direction: row;      /* stack items vertically */
     align-items: center;         /* center horizontally */
     text-align: center;
     padding: 24px 12px;
