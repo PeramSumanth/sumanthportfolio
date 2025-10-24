@@ -27,11 +27,10 @@
 
 
 .intro-text{
-    align-items: flex-start;
     max-width: 500px;
     text-align: center;
-    padding-left: 60px;
-    font-family: Roboto;
+    align-items: center;
+    padding: 20px;
 }
 
 .welcome-message{
